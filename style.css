@@ -1,0 +1,264 @@
+*
+{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+.navigacija
+{
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 20px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	background-color: white;
+}
+
+.navlista
+{
+	list-style-type: none;
+
+
+}
+.navlista .navelement
+{
+	display: inline-block;
+	padding: 20px 40px;
+	
+}
+
+.navigacija a
+{
+	color: white;
+	text-decoration: none;
+}
+
+.navigacija a:hover
+{
+	color: brown;
+	text-decoration: line-through;
+}
+
+.logo
+{
+	height: 30px;
+}
+.menu
+{
+	display:none;
+}
+
+
+.menu-line
+{
+	width: 20px;
+	height: 3px;
+	background-color: black;
+	margin-bottom: 3px;
+}
+.navigacija a
+{
+	color: black;
+	
+}
+
+.navslika 
+{
+	background-image: url('navpicture.jpg');
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: top 25% right 0%;
+	padding: 0 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: flext-start;
+	justify-content: center;
+
+
+}
+.navslika h1
+{
+	padding-bottom: 20px;
+	color: white;
+}
+.navslika button
+{
+	padding: 14px 80px 14px 65px;
+
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0;
+  font-weight: 700;
+  width: 250px;
+  background-image: url('button.png');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  
+
+}
+
+.images {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	  
+	}
+
+.imagewrapper {
+	  display: flex;
+	  align-items: center;
+	  padding: 10px;
+	  height: 300px;
+	  width: 300px;
+	  margin: 10px;
+	}
+
+figure {
+		  display: flex;
+		  flex-direction: column;
+		  margin: 0;
+		}
+
+img {
+		  max-width: 100%;
+		}
+
+figcaption {
+		  align-self: center;
+			font-style: italic;
+		  font-size: 16px;
+		  color: black;
+
+
+		}
+
+.onama img:hover
+{
+	transform: scale(0.75);
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.ponuda img:hover
+{
+	opacity: 0.3;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.onama h2
+{
+	padding: 40px;
+	text-shadow: 2px 2px brown;
+}
+
+.ponuda h2
+{
+	padding: 40px;
+	text-shadow: 2px 2px brown;
+}
+
+button a
+{
+	color: white;
+	text-decoration: none;
+}
+.kontakt 
+{
+	background-image: url('footer.jpg');
+	height: 50vh;
+	width: 100%;
+	background-size: cover;
+	background-position: top 25% right 0%;
+	padding: 0 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+
+}
+.kontakt h1,h4
+{
+	padding-bottom: 20px;
+	color: white;
+}
+.kontakt button
+{
+  padding: 14px 80px 14px 65px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0;
+  font-weight: 700;
+  width: 250px;
+  background-image: url('button.png');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  
+
+}
+
+
+
+@media only screen and (max-width: 700px)
+{
+	.navigacija
+	{
+		flex-direction: column;
+		position: relative;
+		
+	}
+ 
+	.navlista
+	{
+		display:none;
+		width:100%;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.navlista .navelement
+	{
+		display: block;
+		padding: 10px;
+		border-top: 1px solid brown;
+	}
+	
+
+	.menu
+	{
+		display: block;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+	}
+	
+	.logo-mob
+	{
+		width:100%; 
+		margin-left: 10px; 
+		margin-top: 10px;"
+	}
+	
+	.active
+	{
+		display: block;
+	}
+	.navslika
+	{
+		display: none;
+	}
+
+	
+
+}
+
